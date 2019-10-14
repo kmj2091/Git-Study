@@ -11,7 +11,12 @@ class SubActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub)
-        text= "test"
-        textOrder ="OrderNum"
+        text = "test"
+        textOrder = "OrderNum"
+        getText()
+    }
+
+    private fun getText() {
+
     }
 }
