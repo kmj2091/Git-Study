@@ -1,5 +1,7 @@
 package km.project.gitstudy
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -14,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        
+        fun startActivity(activity : Activity){
+            activity.startActivity(Intent(activity,MainActivity::class.java))
+        }
     }
 }
